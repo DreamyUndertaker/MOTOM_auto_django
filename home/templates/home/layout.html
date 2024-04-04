@@ -8,13 +8,23 @@
     {% bootstrap_javascript %}
     {% load static %}
 </head>
-<body style="background: url({% static 'img/main_bg.jpg' %}) no-repeat; background-size: 100% 95vh;">
+<body style="font-family: 'Century Gothic',serif  ">
 {% include 'home/headerNavSection.html' %}
 {% block content %}
-    {% include 'home/secondSection.html' %}
-    {% include 'home/thirdSection.html' %}
-    {% include 'home/fourthSection.html' %}
+    <div class="container-fluid">
+        <div style="background: url({% static '' %})">
+            {% include 'home/secondSection.html' %}
+        </div>
+        <div style="background: url({% static '' %})">
+            {% include 'home/thirdSection.html' %}
+        </div>
+        <div style="background: url({% static '' %})">
+            {% include 'home/fourthSection.html' %}
+        </div>
+        <div style="background: url({% static '' %})">
+            {% include 'home/fifthSection.html' %}
+        </div>
+    </div>
 {% endblock %}
-
 </body>
 </html>
