@@ -2,71 +2,275 @@
 {% block content %}
 <div style="height: 100vh" id="four">
     <div class="container-fluid bg-dark" style="max-width: 1000px">
-        <div class="row">
-            <div class="col">
-                <a href="#auto_market">
-                    <img src="{% static 'png/auto_market.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#exeed">
-                    <img src="{% static 'png/exeed09.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="##faw">
-                    <img src="{% static 'png/faw.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#hyundai">
-                    <img src="{% static 'png/HYUNDAI.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#jetta">
-                    <img src="{% static 'png/jetta.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#mercedes">
-                    <img src="{% static 'png/Mercedes_1.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#mg">
-                    <img src="{% static 'png/MG1924.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#moskvich">
-                    <img src="{% static 'png/moskvich.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#mtm_drive">
-                    <img src="{% static 'png/mtm_drive.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#skoda">
-                    <img src="{% static 'png/skoda_service09.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#vw">
-                    <img src="{% static 'png/vw_service09.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-            <div class="col">
-                <a href="#white_service">
-                    <img src="{% static 'png/white_service.png' %}" alt="" style="height: 80px; width: 100px">
-                </a>
-            </div>
-        </div>
+        <div class="contact-sect-title">Контакты салонов</div>
+            <ul class="nav nav-tabs">
+			    <li class="mobile-3">
+                    <a data-toggle="tab" href="#menu3">
+                        <img src="{% static 'png/HYUNDAI.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+				<li class="mobile-4">
+                    <a data-toggle="tab" class="active show"  href="#home">
+                        <img src="{% static 'png/vw_service09.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-3">
+                    <a data-toggle="tab" href="#menu1">
+                        <img src="{% static 'png/skoda_service09.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-3">
+                    <a data-toggle="tab" href="#menu2">
+                        <img src="{% static 'png/Mercedes_1.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu4">
+                        <img src="{% static 'png/white_service.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu5">
+                        <img src="{% static 'png/auto_market.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu6">
+                        <img src="{% static 'png/mtm_drive.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu7">
+                        <img src="{% static 'png/moskvich.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu8">
+                        <img src="{% static 'png/faw.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu9">
+                        <img src="{% static 'png/jetta.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu10">
+                        <img src="{% static 'png/exeed09.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+                <li class="mobile-4">
+                    <a data-toggle="tab" href="#menu11">
+                        <img src="{% static 'png/MG1924.png' %}" style="width: auto; height: 100px;" alt="">
+                    </a>
+                </li>
+            </ul>
     </div>
     <div class="container-fluid">
-{#         # TODO секции с картами и адресами#}
-    </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-3">
+                <div class="tab-content">
+                    <div id="home" class="address-tabs-mtm tab-pane fade in active show">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный сервисный партнёр Volkswagen</li>
+                                    <li class="mtm-address-li"><a href="https://vag.motom.ru/" target="_blank">vag.motom.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-23-23</li>
+                                    <li class="mtm-address-li">Сервисный отдел: (8422) 27-42-42</li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map1" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu1" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный сервисный партнёр ŠKODA</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://skoda.mtm-avto.ru/?utm_source=motom.ru&utm_medium=referral">skoda.mtm-avto.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-23-23</li>
+                                    <li class="mtm-address-li">Сервисный отдел: (8422) 27-25-55</li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map2" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu2" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Авторизованный сервисный партнер Mercedes-Benz «МОТОМ ПРЕМИУМ»</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://premium.motom.ru/">www.premium.motom.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Московское шоссе, 100.1</li>
+                                    <!-- <li class="mtm-address-li">Контактный телефон: (8422) 58-07-07</li> -->
+                                    <li class="mtm-address-li">Сервисный отдел: (8422) 58-00-88</li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map3" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/moskovskoye_shosse_102b_1/YEEYdQJlS0QBQFtufX9xd3xnYQ==/?indoorLevel=1&ll=48.354903%2C54.305961&utm_medium=mapframe&utm_source=maps&z=18.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Московское шоссе, 102Б/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=48.354903%2C54.305961&mode=whatshere&whatshere%5Bpoint%5D=48.355193%2C54.305923&whatshere%5Bzoom%5D=17&z=18.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu3" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Первый в Ульяновске официальный дилер Hyundai «Автосалон Мотом»</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://hyundai-motom73.ru/">hyundai-motom.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул.Московское шоссе, 102б</li>
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-22-77 </li>
+                                    <li class="mtm-address-li">Сервисный отдел: (8422) 27-34-34</li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map4" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/moskovskoye_shosse_102b_1/YEEYdQJlS0QBQFtufX9xd3xnYQ==/?indoorLevel=1&ll=48.354903%2C54.305961&utm_medium=mapframe&utm_source=maps&z=18.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Московское шоссе, 102Б/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=48.354903%2C54.305961&mode=whatshere&whatshere%5Bpoint%5D=48.355193%2C54.305923&whatshere%5Bzoom%5D=17&z=18.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu4" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Мотом сервис</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://motomservis.ru/">motomservis.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул.Московское шоссе, 102б</li>
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-22-20</li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map5" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/moskovskoye_shosse_102b_1/YEEYdQJlS0QBQFtufX9xd3xnYQ==/?indoorLevel=1&ll=48.354903%2C54.305961&utm_medium=mapframe&utm_source=maps&z=18.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Московское шоссе, 102Б/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=48.354903%2C54.305961&mode=whatshere&whatshere%5Bpoint%5D=48.355193%2C54.305923&whatshere%5Bzoom%5D=17&z=18.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu5" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Автомобили с пробегом «Мотом Автомаркет»</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://motom-avtomarket.ru/?utm_source=motom.ru&utm_medium=referral">motom-avtomarket.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул.Московское шоссе, 102б</li>
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-28-38</li>
+                                    <!-- <li class="mtm-address-li">Контактный телефон: (8422) 27-33-77, (8422) 75-13-18</li> -->
+                                    <li class="mtm-address-li"> </li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map6" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/moskovskoye_shosse_102b_1/YEEYdQJlS0QBQFtufX9xd3xnYQ==/?indoorLevel=1&ll=48.354903%2C54.305961&utm_medium=mapframe&utm_source=maps&z=18.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Московское шоссе, 102Б/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=48.354903%2C54.305961&mode=whatshere&whatshere%5Bpoint%5D=48.355193%2C54.305923&whatshere%5Bzoom%5D=17&z=18.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu6" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Цент кузовного ремонта и детейлинга «Мотом Драйв» </li>
+                                    <li class="mtm-address-li"><a target="_blank" href="http://motom-drive.ru/?utm_source=motom.ru&utm_medium=referral">motom-drive.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
+                                    <!-- <li class="mtm-address-li">Контактный телефон: (8422) 27-46-77, (9272) 70-66-37</li> -->
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 58-08-08</li>
+                                    <li class="mtm-address-li">e-mail: md<code>@</code>motom.ru</li>
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map7" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu7" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный дилер Москвич «МОТОМ» </li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://motom-moskvich.ru/">motom-moskvich.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
+                                    <!--  <li class="mtm-address-li">Контактный телефон: (8422) 27-46-77, (9272) 70-66-37</li> -->
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-83-83</li>
+                                    <!--   <li class="mtm-address-li">e-mail: md<code>@</code>motom.ru</li> -->
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map8" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu8" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный дилер FAW «МОТОМ» </li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://motom.faw-motors.ru/">motom.faw-motors.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
+                                    <!--  <li class="mtm-address-li">Контактный телефон: (8422) 27-46-77, (9272) 70-66-37</li> -->
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-11-77</li>
+                                    <!--   <li class="mtm-address-li">e-mail: md<code>@</code>motom.ru</li> -->
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map9" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu9" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный дилер JETTA «МОТОМ» </li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://motom.faw-motors.ru/">motom.faw-motors.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
+                                    <!--  <li class="mtm-address-li">Контактный телефон: (8422) 27-46-77, (9272) 70-66-37</li> -->
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-11-77</li>
+                                    <!--   <li class="mtm-address-li">e-mail: md<code>@</code>motom.ru</li> -->
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map10" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu10" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный дилер EXEED «МОТОМ»</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://motom-exeed.ru/">motom-exeed.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, Московское шоссе, 102Б</li>
+                                    <!--  <li class="mtm-address-li">Контактный телефон: (8422) 27-46-77, (9272) 70-66-37</li> -->
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 73-77-37</li>
+                                    <!--   <li class="mtm-address-li">e-mail: md<code>@</code>motom.ru</li> -->
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map11" class="address-minimap">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="menu11" class="address-tabs-mtm tab-pane fade">
+                            <div class="half-div mtm-address">
+                                <ul class="mtm-address-ul">
+                                    <li class="mtm-address-li mtm-subtitle">Официальный дилер МG «МОТОМ»</li>
+                                    <li class="mtm-address-li"><a target="_blank" href="https://mg-motom.ru/">mg-motom.ru</a></li>
+                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, Московское шоссе, 100.1</li>
+                                    <!--  <li class="mtm-address-li">Контактный телефон: (8422) 27-46-77, (9272) 70-66-37</li> -->
+                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-00-44</li>
+                                    <!--   <li class="mtm-address-li">e-mail: md<code>@</code>motom.ru</li> -->
+                                </ul>
+                            </div>
+                            <div class="half-div mtm-map">
+                                <div id="map12" class="address-minimap">
+                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/moskovskoye_shosse_102b_1/YEEYdQJlS0QBQFtufX9xd3xnYQ==/?indoorLevel=1&ll=48.354903%2C54.305961&utm_medium=mapframe&utm_source=maps&z=18.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Московское шоссе, 102Б/1 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=48.354903%2C54.305961&mode=whatshere&whatshere%5Bpoint%5D=48.355193%2C54.305923&whatshere%5Bzoom%5D=17&z=18.02" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 {% endblock %}
