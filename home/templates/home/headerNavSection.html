@@ -1,94 +1,108 @@
 {% load static %}
-<header style="height: 100vh; background: url({% static 'img/main_bg.jpg' %}) no-repeat; background-size: 100% 95vh;" id="main">
+<style>
+
+    .navbar img {
+        height: 80px;
+        width: 100px;
+    }
+
+    .navbar-brand p,
+    .nav-link p {
+        margin-bottom: 0;
+    }
+
+    .navbar-brand a,
+    .nav-link a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar-brand a:hover,
+    .nav-link a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+</style>
+<header id="main" style="height: 100vh; background: url({% static 'img/main_bg.jpg' %}) no-repeat; background-size: 100% 95vh;" id="main">
     <div class="navbar">
         <div class="container-fluid" style="max-width: 1500px">
-            <div class="col">
-                <img src="{% static 'png/auto_market.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/exeed09.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/faw.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/HYUNDAI.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/jetta.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/Mercedes_1.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/MG1924.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/moskvich.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/mtm_drive.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/skoda_service09.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/vw_service09.png' %}" alt="" style="height: 80px; width: 100px">
-            </div>
-            <div class="col">
-                <img src="{% static 'png/white_service.png' %}" alt="" style="height: 80px; width: 100px">
+            <div class="row">
+                <div class="col">
+                    <img src="{% static 'png/auto_market.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/exeed09.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/faw.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/HYUNDAI.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/jetta.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/Mercedes_1.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/MG1924.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/moskvich.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/mtm_drive.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/skoda_service09.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/vw_service09.png' %}" alt="">
+                </div>
+                <div class="col">
+                    <img src="{% static 'png/white_service.png' %}" alt="">
+                </div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
-         <div class="row align-items-center justify-content-center" style="height: 70vh">
-             <div class="col-4 ">
-                 <img src="{% static 'png/mtm.png' %}" alt="">
-             </div>
-         </div>
+        <div class="row align-items-center justify-content-center" style="height: 70vh">
+            <div class="col-4">
+                <img src="{% static 'png/mtm.png' %}" alt="">
+            </div>
+        </div>
     </div>
-    <div class="navbar navbar-dark bg-dark fixed-bottom" >
+    <div class="navbar navbar-dark bg-dark fixed-bottom">
         <div class="container-fluid" style="justify-content: space-around; align-items: center">
-            <div class="navbar-brand text-decoration-none col-1" style="color: white">
+            <div class="navbar-brand text-decoration-none col-1">
                 <p>
-                    <a href="#main" class="text-decoration-none" style="color: white">
-                        Главная
-                    </a>
+                    <a href="#main" class="text-decoration-none">Главная</a>
                 </p>
             </div>
             <div class="nav-link col-1">
                 <p>
-                    <a href="#one" class="text-decoration-none" style="color: white">
-                        О компании
-                    </a>
+                    <a href="#one" class="text-decoration-none">О компании</a>
                 </p>
             </div>
             <div class="nav-link col-1">
                 <p>
-                    <a href="#two" class="text-decoration-none" style="color: white">
-                        История
-                    </a>
+                    <a href="#two" class="text-decoration-none">История</a>
                 </p>
             </div>
             <div class="nav-link col-1">
                 <p>
-                    <a href="#three" class="text-decoration-none" style="color: white">
-                        Спец. Предложения
-                    </a>
+                    <a href="#three" class="text-decoration-none">Спец. Предложения</a>
                 </p>
             </div>
             <div class="nav-link col-1">
                 <p>
-                    <a href="#four" class="text-decoration-none" style="color: white">
-                        Контакты
-                    </a>
+                    <a href="#four" class="text-decoration-none">Контакты</a>
                 </p>
             </div>
             <div class="nav-link col-1">
                 <p>
-                    <a href="{% url 'shop:product_list' %}" class="text-decoration-none" style="color: white">
-                        Магазин
-                    </a>
+                    <a href="{% url 'shop:product_list' %}" class="text-decoration-none">Магазин</a>
                 </p>
             </div>
         </div>

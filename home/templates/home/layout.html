@@ -11,6 +11,7 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     {% load static %}
+    {% block styles %}{% endblock %}
 </head>
 <body style="font-family: 'Century Gothic',serif  ">
 {% include 'home/headerNavSection.html' %}
@@ -31,7 +32,6 @@
         <div style="">
             {% include 'home/sixthSection.html' %}
         </div>
-
     </div>
 {% endblock %}
 </body>

@@ -1,15 +1,16 @@
+
 {% load static %}
 {% block content %}
-<div style="height: 100vh" id="four">
-    <div class="container-fluid bg-dark" style="max-width: 1000px">
-        <div class="contact-sect-title">Контакты салонов</div>
+    <div style="height: 100vh" id="four">
+        <div class="container-fluid bg-dark" style="max-width: 1000px">
+            <div class="contact-sect-title">Контакты салонов</div>
             <ul class="nav nav-tabs">
-			    <li class="mobile-3">
+                <li class="mobile-3">
                     <a data-toggle="tab" href="#menu3">
                         <img src="{% static 'png/HYUNDAI.png' %}" style="width: auto; height: 100px;" alt="">
                     </a>
                 </li>
-				<li class="mobile-4">
+                <li class="mobile-4">
                     <a data-toggle="tab" class="active show"  href="#home">
                         <img src="{% static 'png/vw_service09.png' %}" style="width: auto; height: 100px;" alt="">
                     </a>
@@ -65,12 +66,12 @@
                     </a>
                 </li>
             </ul>
-    </div>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-3">
-                <div class="tab-content">
-                    <div id="home" class="address-tabs-mtm tab-pane fade in active show">
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-3">
+                    <div class="tab-content">
+                        <div id="home" class="address-tabs-mtm tab-pane fade in active show">
                             <div class="half-div mtm-address">
                                 <ul class="mtm-address-ul">
                                     <li class="mtm-address-li mtm-subtitle">Официальный сервисный партнёр Volkswagen</li>
@@ -82,22 +83,6 @@
                             </div>
                             <div class="half-div mtm-map">
                                 <div id="map1" class="address-minimap">
-                                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="menu1" class="address-tabs-mtm tab-pane fade">
-                            <div class="half-div mtm-address">
-                                <ul class="mtm-address-ul">
-                                    <li class="mtm-address-li mtm-subtitle">Официальный сервисный партнёр ŠKODA</li>
-                                    <li class="mtm-address-li"><a target="_blank" href="https://skoda.mtm-avto.ru/?utm_source=motom.ru&utm_medium=referral">skoda.mtm-avto.ru</a></li>
-                                    <li class="mtm-address-li">Адрес: Россия, г.Ульяновск, ул. Октябрьская, 51</li>
-                                    <li class="mtm-address-li">Контактный телефон: (8422) 27-23-23</li>
-                                    <li class="mtm-address-li">Сервисный отдел: (8422) 27-25-55</li>
-                                </ul>
-                            </div>
-                            <div class="half-div mtm-map">
-                                <div id="map2" class="address-minimap">
                                     <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a><a href="https://yandex.ru/maps/195/ulyanovsk/house/oktyabrskaya_ulitsa_51/YEEYdQNhSUIBQFtufX9xcX5rYw==/?ll=48.341076%2C54.300287&utm_medium=mapframe&utm_source=maps&z=17.44" style="color:#eee;font-size:12px;position:absolute;top:14px;">Октябрьская улица, 51 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=48.341076%2C54.300287&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzc1NDc2MhJH0KDQvtGB0YHQuNGPLCDQo9C70YzRj9C90L7QstGB0LosINCe0LrRgtGP0LHRgNGM0YHQutCw0Y8g0YPQu9C40YbQsCwgNTEiCg1EXUFCFX4zWUI%2C&z=17.44" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                                 </div>
                             </div>
@@ -272,5 +257,5 @@
                 </div>
             </div>
         </div>
-</div>
+    </div>
 {% endblock %}

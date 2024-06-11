@@ -1,96 +1,88 @@
+
+
 {% load static %}
 {% block content %}
-<div style="height: 100vh" id="three">
-    <div class="container-fluid bg-light">
-        <div class="row justify-content-center align-items-center">
-            <div class="col" style="max-width: 57vh">
-                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <div style="height: 100vh; overflow: hidden;">
+        <div class="container-fluid bg-light">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8"> <!-- Лучше использовать классы Bootstrap для определения размеров колонок -->
+                    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" style="background: gray;">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img src="{% static 'img/EXEED-ujn.jpg' %}" class="card-img-top" alt="EXEED ЦЕНТР МОТОМ НА МОСКВОСКОМ">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EXEED ЦЕНТР МОТОМ НА МОСКВОСКОМ</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 43rem;">
+                                    <img src="{% static 'img/FAV5.jpg' %}" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">FAW в автосалоне МОТОМ</h5>
+                                        <p class="card-text">Мы подберем для Вас отличные варианты</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 43rem;">
+                                    <img src="{% static 'img/Jetta_01.jpg' %}" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jetta в Автосалоне Мотом</h5>
+                                        <p class="card-text">Самые выгодные предложения для Вас</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 43rem;">
+                                    <img src="{% static 'img/MB_1.jpg' %}" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mercedes-Benz в МОТОМ ПРЕМИУМ </h5>
+                                        <p class="card-text">Получите индивидуальное предложение на автомобиль Вашей мечты</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 43rem;">
+                                    <img src="{% static 'img/moskvich_02.jpg' %}" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Москвич в Автосалоне Мотом</h5>
+                                        <p class="card-text">Самые выгодные предложения для Вас</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 43rem;">
+                                    <img src="{% static 'img/SKODA_1_new.jpg' %}" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Официальный сервисный партнер ŠKODA МТМ-Авто.</h5>
+                                        <p class="card-text">Сервис по выгодным ценам.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card" style="width: 43rem;">
+                                    <img src="{% static 'img/white_service.jpg' %}" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Мотом сервис</h5>
+                                        <p class="card-text">Выгодные цены на сервисное обсуживание</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Добавьте остальные элементы carousel-item здесь -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner" style="background: gray; height: 95vh; width: 666px">
-                        <div class="carousel-item active">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/EXEED-ujn.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                                    <p class="card-text">EXEED ЦЕНТР МОТОМ НА МОСКВОСКОМ</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/FAV5.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">FAW в автосалоне МОТОМ</h5>
-                                    <p class="card-text">Мы подберем для Вас отличные варианты</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/Jetta_01.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Jetta в Автосалоне Мотом</h5>
-                                    <p class="card-text">Самые выгодные предложения для Вас</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/MB_1.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mercedes-Benz в МОТОМ ПРЕМИУМ </h5>
-                                    <p class="card-text">Получите индивидуальное предложение на автомобиль Вашей мечты</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/moskvich_02.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Москвич в Автосалоне Мотом</h5>
-                                    <p class="card-text">Самые выгодные предложения для Вас</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/SKODA_1_new.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Официальный сервисный партнер ŠKODA МТМ-Авто.</h5>
-                                    <p class="card-text">Сервис по выгодным ценам.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card" style="width: 43rem;">
-                                <img src="{% static 'img/white_service.jpg' %}" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Мотом сервис</h5>
-                                    <p class="card-text">Выгодные цены на сервисное обсуживание</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}

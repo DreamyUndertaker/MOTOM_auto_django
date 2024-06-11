@@ -1,28 +1,29 @@
 {% load static %}
+
 {% block content %}
-<div style="height: 100vh" id="one">
-    <div class="container-fluid" style="align-items: center">
-        <div class="row align-items-center">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-3">
-                    <div class="h1">
-                        <p>
-                            О компании в цифрах
-                        </p>
+    <div style="height: 100vh" id="one">
+        <div class="container-fluid" style="align-items: center">
+            <div class="row align-items-center">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-3">
+                        <div class="h1">
+                            <p>
+                                О компании в цифрах
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="card" style="width: 1500px; border: None" >
-                     <div class="row g-1">
-                         <div class="col-7">
-                            <img src="{% static 'img/1.jpg' %}" alt="" style="height: 400px; width: 800px" class="">
-                         </div>
-                         <div class="col-5">
-                            <div class="card-body">
-                                <div class="table-borderless table-responsive text-center card-text">
-                                    <table class="table table-borderless table-light align-middle">
-                                        <tbody>
+                <div class="row justify-content-center align-items-center">
+                    <div class="card" style="width: 1500px; border: None" >
+                        <div class="row g-1">
+                            <div class="col-7">
+                                <img src="{% static 'img/1.jpg' %}" alt="" style="height: 400px; width: 800px" class="">
+                            </div>
+                            <div class="col-5">
+                                <div class="card-body">
+                                    <div class="table-borderless table-responsive text-center card-text">
+                                        <table class="table table-borderless table-light align-middle">
+                                            <tbody>
                                             <tr>
                                                 <td>
                                                     <p>
@@ -93,15 +94,15 @@
                                                     </p>
                                                 </td>
                                             </tr>
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                     </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 {% endblock %}
